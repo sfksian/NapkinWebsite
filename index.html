@@ -8,7 +8,38 @@
     <form action="submit.html" method="GET">
           <label colour="white">Thought</label> <input name="Thought">
           <label>Why?</label> <input name="Reason">
-          <button>Think It</button>
+          <button>Think It</button>  
+          <form action="submit.html" method="GET">
+          <fieldset>
+          <legend><h3>Create Your Daydream</h3></legend>
+          <div>
+          <label for="Thought">Your Thought</label>
+          <input id="Thought" name="Thought"
+            required placeholder="What are you thinking?">
+          </div>
+          <div>
+          <label for="Why"> Why? </label>
+          <input id="Why" name="Reason" type="password"
+            required placeholder="what ya thinking that for" minlength="8">
+          <!-- The for/ ID adds an Explict input association which allows user to click on box title to enter answer-->
+          <!-- Look into Regex patterns-->
+          </div>
+          <button type="submit">Think Thought</button>
+          <div>
+          <input type="checkbox" id="Type"
+            name="Type" value="subscribe" checked>
+          <label for="Type">I declare this thought is not a dream</label>
+          <fieldset>
+          <legend><h4>Select your thought type:</h4></legend>
+          <input type="radio" id="daydream"
+            name="type" value="daydream">
+          <label for="daydream">Daydream</label>
+          <div>
+          <input type="radio" id="desire"
+            name="type" value="desire">
+          <label for="desire">Desire</label>
+
+      
       </form> 
       <!-- Learn CSS to make the colour of text white/html code it white and figure out how to remove hyperlink from form and restrict to image --> 
      </div>
